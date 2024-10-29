@@ -22,4 +22,4 @@ After these five columns, there are 2*N columns (representing the number of chro
 
 The output of this script is a table with 13 columns, that has to be modified by adding a last column of ANCESTRAL allele frequency in order to apply the stat_normalization.py script.
 
-2) The script stat_normalization.py takes as input the modified output obtained at point 1, and 
+2) The script stat_normalization.py takes as input the modified output obtained at point 1, and computes a 100-frequency-bin based normalization of H12 results (the script can be easily modified to compute normalization of other H statistics from the same file). The output is the same file as the input, with an extra column added to report the normalized score.
