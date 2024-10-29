@@ -19,3 +19,7 @@ The input file for this script is a space-separated text file for an entire chro
 - derived allele
   
 After these five columns, there are 2*N columns (representing the number of chromosome copies in the studied population, that is two chromosome copies for each individual) containing binary indication of phased alleles, where 0 represents the ANCESTRAL state and 1 represents the DERIVED state. This file can be simply obtained by modifying a phased vcf file or the outcome of a SHAPEIT-based phase reconstruction.
+
+The output of this script is a table with 13 columns, that has to be modified by adding a last column of ANCESTRAL allele frequency in order to apply the stat_normalization.py script.
+
+2) The script stat_normalization.py takes as input the modified output obtained at point 1, and 
